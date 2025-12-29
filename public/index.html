@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr Trending Gigs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+    <h1><i class="fas fa-fire"></i> Fiverr Trending Gig Finder</h1>
+</header>
+
+<div class="container">
+    <div class="form-box">
+        <div class="form-group">
+            <label for="category"><i class="fas fa-tag"></i> Category</label>
+            <select id="category">
+                <option value="">Select Category</option>
+                <optgroup label="Graphics & Design">
+                    <option value="logo design">Logo Design</option>
+                    <option value="web design">Web Design</option>
+                    <option value="graphic design">Graphic Design</option>
+                </optgroup>
+                <optgroup label="Writing & Translation">
+                    <option value="article writing">Article Writing</option>
+                    <option value="content writing">Content Writing</option>
+                    <option value="copywriting">Copywriting</option>
+                </optgroup>
+                <optgroup label="Video & Animation">
+                    <option value="video editing">Video Editing</option>
+                    <option value="animation">Animation</option>
+                    <option value="motion graphics">Motion Graphics</option>
+                </optgroup>
+                <optgroup label="Digital Marketing">
+                    <option value="social media marketing">Social Media Marketing</option>
+                    <option value="seo">SEO</option>
+                    <option value="digital marketing">Digital Marketing</option>
+                </optgroup>
+                <optgroup label="Programming & Tech">
+                    <option value="web development">Web Development</option>
+                    <option value="wordpress">WordPress</option>
+                    <option value="mobile app">Mobile App Development</option>
+                    <option value="api development">API Development</option>
+                </optgroup>
+                <optgroup label="Music & Audio">
+                    <option value="voice over">Voice Over</option>
+                    <option value="music production">Music Production</option>
+                    <option value="audio editing">Audio Editing</option>
+                </optgroup>
+                <optgroup label="Business & Admin">
+                    <option value="data entry">Data Entry</option>
+                    <option value="virtual assistant">Virtual Assistant</option>
+                    <option value="business consulting">Business Consulting</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="country"><i class="fas fa-globe"></i> Country</label>
+            <select id="country">
+                <option value="">Any Country</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="min_price"><i class="fas fa-dollar-sign"></i> Min Price</label>
+            <input id="min_price" type="number" placeholder="0" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="max_price"><i class="fas fa-dollar-sign"></i> Max Price</label>
+            <input id="max_price" type="number" placeholder="1000" min="0">
+        </div>
+
+        <button onclick="searchGigs()" class="search-btn"><i class="fas fa-search"></i> Search</button>
+    </div>
+
+    <table id="results-table">
+        <thead>
+            <tr>
+                <th><i class="fas fa-heading"></i> Title</th>
+                <th><i class="fas fa-user"></i> Seller</th>
+                <th><i class="fas fa-star"></i> Rating</th>
+                <th><i class="fas fa-comments"></i> Reviews</th>
+                <th><i class="fas fa-tag"></i> Price</th>
+                <th><i class="fas fa-chart-line"></i> Score</th>
+                <th><i class="fas fa-calendar-alt"></i> Date Published</th>
+                <th><i class="fas fa-external-link-alt"></i> Link</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
