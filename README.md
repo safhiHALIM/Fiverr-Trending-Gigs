@@ -120,3 +120,8 @@ Open `http://localhost:4000` in your browser.
 *   **Backend:** Node.js, TypeScript, Express, Axios, Cheerio
 *   **Frontend:** HTML, CSS, JavaScript
 *   **Development Tools:** `ts-node-dev`, `typescript`
+
+---
+
+**Author:** neosafi
+

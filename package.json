@@ -1,6 +1,7 @@
 {
   "name": "fiverr-trending-ts",
   "version": "1.0.0",
+  "author": "neosafi",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",

@@ -236,3 +236,17 @@ td a i {
 td a:hover i {
     transform: rotate(-15deg);
 }
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 0.9em;
+    animation: fadeIn 0.6s ease-out 0.6s both;
+}
+
+.footer strong {
+    color: #ffffff;
+    text-decoration: underline;
+}
